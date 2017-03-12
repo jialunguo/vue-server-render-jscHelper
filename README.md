@@ -16,10 +16,9 @@ exports.parse = function(tplStr, options) {
 };
 ```
 
-put index.js and jscHelper.js where can require vue and vue-server-renderer
-
 run 
 ```
+cd vue-server-render-jscHelper
 node index.js
 ```
 
