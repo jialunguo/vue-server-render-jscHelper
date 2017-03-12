@@ -44,10 +44,7 @@ for(var i = 0; i < 100000; i++) {
         data: data
     });
 }
-console.log('jscHelper: ', Date.now() - t0);
-
-
-var t1 = Date.now();
+console.log('jscHelper: ', Date.now() - t0, 'ms');
 
 var vueObj = new Vue({
     template: tplStr,
@@ -55,6 +52,8 @@ var vueObj = new Vue({
         data: data
     }
 });
+
+var t1 = Date.now();
 
 for(var i = 0; i < 100000; i++) {
     SSR.renderToString(vueObj, function(error, bodyStr) {
@@ -65,4 +64,4 @@ for(var i = 0; i < 100000; i++) {
 }
 
 
-console.log('vue-server-render: ', Date.now() - t1);
+console.log('vue-server-render: ', Date.now() - t1, 'ms');
