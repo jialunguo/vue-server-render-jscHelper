@@ -24,6 +24,6 @@ result will show in the console
 example result:
 
 ```
-jscHelper:  441
-vue-server-render:  3354
+jscHelper:  441ms
+vue-server-render:  3354ms
 ```
