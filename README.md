@@ -17,7 +17,7 @@ exports.parse = function(tplStr, options) {
 
 put index.js and jscHelper.js where can require vue and vue-server-renderer
 
-run index.js
+run node index.js
 
 result will show in the console
 
