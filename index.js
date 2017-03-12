@@ -42,7 +42,7 @@ var htmlStr = '';
 
 var t0 = Date.now();
 
-for(var i = 0; i < 100000; i++) {
+for(var i = 0; i < 10000; i++) {
     htmlStr = jscHelper.renderVue({
         template: tplStr,
         data: data
@@ -61,7 +61,7 @@ var vueObj = new Vue({
 
 var t1 = Date.now();
 
-for(var i = 0; i < 100000; i++) {
+for(var i = 0; i < 10000; i++) {
     SSR.renderToString(vueObj, function(error, bodyStr) {
         if (error) {
             console.log('模板渲染错误');
