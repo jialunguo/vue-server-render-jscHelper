@@ -1,8 +1,10 @@
 # vue-server-render
 
+```
 npm install vue.
 
 npm install vue-server-renderer
+```
 
 find build.js in vue-server-renderer, add below code at the end:
 
@@ -17,7 +19,10 @@ exports.parse = function(tplStr, options) {
 
 put index.js and jscHelper.js where can require vue and vue-server-renderer
 
-run node index.js
+run 
+```
+node index.js
+```
 
 result will show in the console
 
