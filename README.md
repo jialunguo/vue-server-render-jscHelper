@@ -1,9 +1,9 @@
 # vue-server-render-jscHelper
 
 ```
-npm install vue.
+npm install vue@2.0.1
 
-npm install vue-server-renderer
+npm install vue-server-renderer@2.0.1
 ```
 
 find build.js in vue-server-renderer, add below code at the end:
