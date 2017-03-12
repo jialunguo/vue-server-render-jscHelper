@@ -1,0 +1,24 @@
+{
+  "author": {
+    "name": "jialunguo"
+  },
+  "dependencies": {
+    "vue-server-renderer": "2.0.1",
+    "vue": "2.0.1"
+  },
+  "description": "jscHelper for vue-server-rendered",
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "jialunguo",
+      "email": "786933561@qq.com"
+    }
+  ],
+  "name": "vue-server-renderer-jscHelper",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuejs/vue.git"
+  },
+  "version": "0.1"
+}
