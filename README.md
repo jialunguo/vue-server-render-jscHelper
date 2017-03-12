@@ -1,4 +1,4 @@
-# vue-server-render
+# vue-server-render-jscHelper
 
 ```
 npm install vue.
