@@ -3,6 +3,7 @@ var Vue = require('vue');
 var jscHelper = require('./jscHelper');
 
 var tplStr = [
+    '<div>',
     '<nav class="ui-nav j-tabs">',
     '<button v-for="(tab, index) in data.tabList" class="item-nav" :class="{current: data.curTab === tab.id}">{{tab.name}}</button>',
     '</nav>',
@@ -17,6 +18,7 @@ var tplStr = [
     '</li>',
     '</ul>',
     '</main>',
+    '</div>'
 ].join('');
 
 var data = {
@@ -36,14 +38,18 @@ for(var i = 0; i < 30; i++) data.curList.items.push({
     format: 'png'
 });
 
+var htmlStr = '';
+
 var t0 = Date.now();
 
 for(var i = 0; i < 100000; i++) {
-    jscHelper.renderVue({
+    htmlStr = jscHelper.renderVue({
         template: tplStr,
         data: data
     });
 }
+
+//console.log(htmlStr);
 console.log('jscHelper: ', Date.now() - t0, 'ms');
 
 var vueObj = new Vue({
@@ -59,9 +65,11 @@ for(var i = 0; i < 100000; i++) {
     SSR.renderToString(vueObj, function(error, bodyStr) {
         if (error) {
             console.log('模板渲染错误');
+        } else {
+            htmlStr = bodyStr;
         }
     });
 }
 
-
+//console.log(htmlStr);
 console.log('vue-server-render: ', Date.now() - t1, 'ms');
