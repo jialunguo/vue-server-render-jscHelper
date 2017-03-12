@@ -21,8 +21,6 @@ function makeFunction(code) {
     let eq;
     let jscode;
 
-    //str += 'with(data) {';//with模式
-
     //解析模板
     var index = 0;
 
