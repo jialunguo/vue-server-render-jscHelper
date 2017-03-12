@@ -4,4 +4,8 @@ npm install vue.
 
 npm install vue-server-renderer
 
-run index.js and the result will show in the console
+put index.js and jscHelper.js where can require vue and vue-server-renderer
+
+run index.js
+
+result will show in the console
