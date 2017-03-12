@@ -18,7 +18,7 @@
   "name": "vue-server-renderer-jscHelper",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jialunguo/vue-server-render.git"
+    "url": "git+https://github.com/jialunguo/vue-server-render-jscHelper.git"
   },
-  "version": "0.1"
+  "version": "0.0.1"
 }
