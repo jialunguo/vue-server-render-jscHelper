@@ -5,7 +5,7 @@ cd vue-server-render-jscHelper
 npm install
 ```
 
-find build.js in node_modules/vue-server-renderer, add below code at the end:
+find build.js in node_modules/vue-server-renderer, add these code to the end:
 
 ```
 exports.parse = function(tplStr, options) {
